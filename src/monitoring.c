@@ -6,7 +6,7 @@
 /*   By: sonouelg <sonouelg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 19:06:42 by sonia             #+#    #+#             */
-/*   Updated: 2024/07/10 10:39:06 by sonouelg         ###   ########.fr       */
+/*   Updated: 2024/07/10 11:46:56 by sonouelg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*death_control(void *args)
 	{
 		if (check_all_dead(philos) == 1 || check_meal_finish(philos) == 1)
 			return (args);
-		usleep(50);
+		usleep(500);
 	}
 	return (args);
 }

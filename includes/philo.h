@@ -6,7 +6,7 @@
 /*   By: sonouelg <sonouelg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/24 14:45:38 by sonouelg          #+#    #+#             */
-/*   Updated: 2024/07/09 14:54:07 by sonouelg         ###   ########.fr       */
+/*   Updated: 2024/07/10 11:44:58 by sonouelg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ void	init_args_philo(t_philo *philo, char **argv);
 int		create_thread(t_data *data, pthread_mutex_t *forks);
 void	iphilos(t_philo *philos, t_data *dt, pthread_mutex_t *fks, char **argv);
 void	philo_full(t_philo *philo);
+void	print_message(t_philo *philo, char *str);
 
 /******** error & free management ****************/
 void	free_malloc(t_data *data, t_philo *philos, pthread_mutex_t *forks);
@@ -78,11 +79,11 @@ void	dest_mutxs(t_data *dt, pthread_mutex_t *fks, t_philo *ps, char *str);
 void	*routine(void *args);
 int		check_flag_death(t_philo *philo);
 void	philo_thinking(t_philo *philo);
-void 	take_forks(t_philo *philo);
-void 	drop_forks(t_philo *philo);
+void	take_forks(t_philo *philo);
+void	drop_forks(t_philo *philo);
 void	philo_eating(t_philo *philo);
 void	philo_sleeping(t_philo *philo);
-void	print_message(t_philo *philo, char *str);
+
 
 /************* monitoring ************************************/
 

@@ -6,7 +6,7 @@
 /*   By: sonouelg <sonouelg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 17:37:51 by sonia             #+#    #+#             */
-/*   Updated: 2024/07/10 11:11:30 by sonouelg         ###   ########.fr       */
+/*   Updated: 2024/07/10 11:43:14 by sonouelg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,14 @@ int	check_flag_death(t_philo *philo)
 	}
 	pthread_mutex_unlock(philo->dead_lock);
 	return (0);
+}
+void	print_message(t_philo *philo, char *str)
+{
+	size_t	delta_t;
+
+	pthread_mutex_lock(philo->print_lock);
+	delta_t = get_time() - philo->diner_start;
+	if (!check_flag_death(philo))
+		printf("%zu %d %s\n", delta_t, philo->philo_id, str);
+	pthread_mutex_unlock(philo->print_lock);
 }
