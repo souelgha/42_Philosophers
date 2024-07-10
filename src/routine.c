@@ -6,13 +6,11 @@
 /*   By: sonouelg <sonouelg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 18:22:27 by sonia             #+#    #+#             */
-/*   Updated: 2024/07/10 11:43:16 by sonouelg         ###   ########.fr       */
+/*   Updated: 2024/07/10 17:05:51 by sonouelg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
-
-
 
 void	philo_sleeping(t_philo *philo)
 {
@@ -45,8 +43,8 @@ void	philo_eating(t_philo *philo)
 	philo->last_meal = get_time();
 	philo->nb_meal += 1;
 	pthread_mutex_unlock(&philo->meal_lock);
-	ft_usleep(philo->time_to_eat);
 	philo_full(philo);
+	ft_usleep(philo->time_to_eat);
 	drop_forks(philo);
 }
 

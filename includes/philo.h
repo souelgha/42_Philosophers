@@ -6,7 +6,7 @@
 /*   By: sonouelg <sonouelg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/24 14:45:38 by sonouelg          #+#    #+#             */
-/*   Updated: 2024/07/10 11:44:58 by sonouelg         ###   ########.fr       */
+/*   Updated: 2024/07/10 16:13:42 by sonouelg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,9 +84,7 @@ void	drop_forks(t_philo *philo);
 void	philo_eating(t_philo *philo);
 void	philo_sleeping(t_philo *philo);
 
-
 /************* monitoring ************************************/
-
 void	*death_control(void *args);
 int		check_timeover(t_philo *philo);
 int		check_all_dead(t_philo *philos);
