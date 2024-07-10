@@ -6,7 +6,7 @@
 /*   By: sonouelg <sonouelg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 17:37:51 by sonia             #+#    #+#             */
-/*   Updated: 2024/07/09 17:01:21 by sonouelg         ###   ########.fr       */
+/*   Updated: 2024/07/10 11:11:30 by sonouelg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	*routine(void *args)
 
 	philo = (t_philo *)args;
 	if (philo->philo_id % 2 == 0)
-		ft_usleep(philo->time_to_eat / 2);
+		ft_usleep(philo->time_to_eat);
 	while (!check_flag_death(philo))
 	{
 		philo_eating(philo);
