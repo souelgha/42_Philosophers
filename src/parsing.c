@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonouelg <sonouelg@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sonia <sonia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/25 11:39:38 by sonouelg          #+#    #+#             */
-/*   Updated: 2024/07/09 13:49:43 by sonouelg         ###   ########.fr       */
+/*   Updated: 2024/07/11 10:53:19 by sonia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,18 @@ int	check_args(int argc, char **argv)
 			printf("Invalid Arguments\n");
 			return (0);
 		}
-		if (ft_atoi(argv[i]) == 0 && i != 5)
+		if (ft_atoi(argv[i]) == 0)
 		{
-			printf("Invalid Arguments\n");
+			if (i == 1)
+				printf("No philosopher around table. need at least 1 !\n");
+			else if (i == 5)
+				printf("No meal on the table. need at least 1 !\n");
+			else
+				printf("try value > 0 !!!\n");
 			return (0);
 		}
 		i++;
 	}
-	if (argv[5] && check_digit(argv[5]) == 1 && ft_atoi(argv[5]) == 0)
-		return (0);
 	return (1);
 }
 

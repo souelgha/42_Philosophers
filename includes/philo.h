@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonouelg <sonouelg@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sonia <sonia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/24 14:45:38 by sonouelg          #+#    #+#             */
-/*   Updated: 2024/07/10 16:13:42 by sonouelg         ###   ########.fr       */
+/*   Updated: 2024/07/11 09:31:42 by sonia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ void	print_message(t_philo *philo, char *str);
 
 /******** error & free management ****************/
 void	free_malloc(t_data *data, t_philo *philos, pthread_mutex_t *forks);
-void	dest_mutxs(t_data *dt, pthread_mutex_t *fks, t_philo *ps, char *str);
+void	dest_mutxs(t_data *dt, pthread_mutex_t *fks, t_philo *ps);
 
 /********** actions &routines *********************/
 void	*routine(void *args);

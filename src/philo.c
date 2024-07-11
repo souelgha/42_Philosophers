@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonouelg <sonouelg@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sonia <sonia@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 15:19:00 by sonouelg          #+#    #+#             */
-/*   Updated: 2024/07/09 11:23:48 by sonouelg         ###   ########.fr       */
+/*   Updated: 2024/07/11 09:31:42 by sonia            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(int argc, char **argv)
 	init_data(data, philos);
 	iphilos(philos, data, forks, argv);
 	create_thread(data, forks);
-	dest_mutxs(data, forks, philos, NULL);
+	dest_mutxs(data, forks, philos);
 	free_malloc(data, philos, forks);
 	return (0);
 }
