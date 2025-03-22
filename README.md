@@ -9,9 +9,9 @@
   ``` bash
  ./philo 5 450 200 200 10
 ```
-    - argv[1] = nb philosophers
-    - argv[2] = time to die
-    - argv[3] = time to eat
-    - argv[4] = time to sleep
-    - argv[5] = nb meal to eat (optionnal)
+  - argv[1] = nb philosophers
+  - argv[2] = time to die
+  - argv[3] = time to eat
+  - argv[4] = time to sleep
+  - argv[5] = nb meal to eat (optionnal)
 
