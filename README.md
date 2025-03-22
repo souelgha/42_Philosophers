@@ -6,6 +6,11 @@
   ![apercu](https://github.com/souelgha/42_Philosophers/blob/main/illustration.png)
 
 ## Usage
+run a make:
+```bash
+make
+```
+use this configuration to start :
   ``` bash
  ./philo 5 450 200 200 10
 ```
