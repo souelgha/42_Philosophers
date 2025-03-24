@@ -23,8 +23,10 @@ use this configuration to start
 ## Output
 The output of the program is in the format <timestamp> <philosopher (1 to number_of_philosophers)> <action>
 The logged messages are always in sequential order.
+![apercu](https://github.com/souelgha/42_Philosophers/blob/main/output-philo.png)
 
+you can use a viusalizer tool to check philosophers status.
 
-
-[visualiszer](https://nafuka11.github.io/philosophers-visualizer/)
+[visualizer](https://nafuka11.github.io/philosophers-visualizer/)
+![aoercu](https://github.com/souelgha/42_Philosophers/blob/main/visualizer.png)
 
