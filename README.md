@@ -1,4 +1,4 @@
-# Objectif : Modeling the [Philosophers' problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem)
+# Goal : Modeling the [Philosophers' problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem)
 
 ## Introduction of thread and mutex
 - Philosophers are represented by threads.
